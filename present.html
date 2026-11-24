@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presenter · PLT Live Poll</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="pin-gate" id="gate">
+  <form id="pinForm">
+    <h1>Presenter screen</h1>
+    <p style="color:var(--ink-2)">Enter the presenter PIN to control the poll.</p>
+    <input type="password" id="pin" placeholder="Presenter PIN" autocomplete="current-password" inputmode="numeric">
+    <button class="submit" type="submit">Start</button>
+    <div class="note err" id="pinErr"></div>
+  </form>
+</div>
+
+<div class="stage-wrap">
+  <div class="stage" id="stage">
+    <div class="top">
+      <div class="t" id="sTitle">PLT Live Poll<span id="sSub"></span></div>
+      <div class="pill" id="status">Voting open</div>
+    </div>
+    <div class="main">
+      <div class="qnum" id="qnum"></div>
+      <div class="qtext" id="qtext"></div>
+      <div class="results" id="results"></div>
+    </div>
+    <aside class="side">
+      <img id="qr" src="/api/qr" alt="QR code to join the poll">
+      <div class="scan">Scan to vote</div>
+      <div class="url" id="joinUrl"></div>
+      <div class="count"><b id="count">0</b><span>responses</span></div>
+    </aside>
+  </div>
+</div>
+
+<div class="controls" id="controls">
+  <button id="prev">◀ Prev</button>
+  <button id="next">Next ▶</button>
+  <button id="toggle">Close voting</button>
+  <button id="reveal">Reveal answer</button>
+  <button id="analyse" class="primary">✨ Analyse with AI</button>
+  <button id="analyseAll" class="primary">✨ Session summary</button>
+  <button id="report">Report</button>
+  <button id="fs">Full screen</button>
+  <button id="reset" class="danger">New session</button>
+</div>
+<script src="/present.js"></script>
+</body>
+</html>

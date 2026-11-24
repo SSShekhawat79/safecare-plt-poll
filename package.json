@@ -1,0 +1,11 @@
+{
+  "name": "plt-live-poll",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "@netlify/blobs": "latest",
+    "qrcode": "^1.5.4"
+  }
+}
