@@ -51,8 +51,8 @@ textarea { min-height: 110px; resize: vertical; }
 .closed-banner { background: #f1ece2; color: var(--ink-2); border-radius: 10px; padding: 10px 12px; font-size: 14px; margin-bottom: 14px; }
 
 /* ---------- Presenter ---------- */
-.stage-wrap { position: fixed; inset: 0; display: grid; place-items: center; background: #e9e5dc; }
-.stage { width: 1600px; height: 900px; background: var(--bg); position: relative; transform-origin: center; display: grid; grid-template-columns: 1fr 380px; grid-template-rows: 84px 1fr; overflow: hidden; }
+.stage-wrap { position: fixed; inset: 0; background: #e9e5dc; overflow: hidden; }
+.stage { width: 1600px; height: 900px; background: var(--bg); position: absolute; left: 50%; top: 50%; transform-origin: center; transform: translate(-50%, -50%); display: grid; grid-template-columns: 1fr 380px; grid-template-rows: 84px 1fr; overflow: hidden; }
 .stage .top { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; border-bottom: 1px solid var(--line); }
 .stage .top .t { font-size: 22px; font-weight: 700; }
 .stage .top .t span { font-weight: 400; color: var(--muted); margin-left: 12px; font-size: 18px; }

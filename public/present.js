@@ -21,7 +21,7 @@
   // ---------- scale the 16:9 stage to the window ----------
   function fit() {
     const s = Math.min(window.innerWidth / 1600, window.innerHeight / 900);
-    $("stage").style.transform = `scale(${s})`;
+    $("stage").style.transform = `translate(-50%, -50%) scale(${s})`;
   }
   window.addEventListener("resize", fit); fit();
 
