@@ -20,4 +20,4 @@ These sit at the bottom of the screen and fade out when you're not using them; m
 Edit `lib/questions.mjs`, then redeploy. The file explains each question type: mcq, rating, wordcloud and text.
 
 ## Presenter PIN
-The default PIN is set in `lib/store.mjs`. To change it without editing code, add an environment variable called `PRESENTER_PIN` in Netlify (Project configuration > Environment variables), then redeploy.
+The presenter passphrase is stored only in scrambled form in `lib/store.mjs`. To change it without editing code, add an environment variable called `PRESENTER_PIN` in Netlify (Project configuration > Environment variables), then redeploy.
